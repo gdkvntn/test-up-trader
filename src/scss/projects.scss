@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+.projects{
+    max-width: 736px;
+    margin: 0 auto;
+    position: relative;
+    top:-25px;
+    .projects-header{
+        display: flex;
+        justify-content: space-between;
+        .input{
+            margin-right: 8px;
+        }
+    }
+    .projects-board{
+        margin-top: 65px;
+    }
+    @media screen and (max-width:790px) {
+        padding: 0 16px 0 16px;
+    }
+   
+}
+.projectCard{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 100%;
+    justify-content: space-between;
+    border:$border;
+    border-radius:8px;
+    cursor: pointer;
+    :first-child{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+        color: $gray-100;
+    }
+    .active{
+        text-decoration: line-through;
+    }
+   
+}

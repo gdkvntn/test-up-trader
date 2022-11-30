@@ -1,0 +1,65 @@
+.tableCard{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    border:$border;
+    border-radius:8px;
+    cursor: pointer;
+    
+    
+    .input{
+        padding: 8px; 
+        font-size: 10px;
+    }
+    .select{
+        padding: 8px; 
+        font-size: 10px;
+    }
+    .tableCard-number{
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .tableCard-block-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .tableCard-description{
+        display: flex;
+        flex-direction: column;
+    }
+    .tableCard-date{
+        display: flex;
+        
+    }
+    .tableCard-title, .tableCard-text{
+        background-color: transparent;
+        border: none;
+    }
+    .tableCard-title{
+        font-size: 14px;
+    }
+    .tableCard-text{
+        font-size: 12px;
+    }
+}
+.completed{
+    border-color: $purple-dark;
+    &:after{
+        content: '\2714';
+        font-size: 100px;
+        display: inline-block;
+        position: absolute;
+        color: $purple-dark;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 50px;
+        color: $purple-dark;
+      
+        transform: translate(-50%,-50%);
+        }
+}
+       

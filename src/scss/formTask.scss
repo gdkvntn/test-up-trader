@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.formTask{
+    position: relative;
+    top:-50px;
+max-width: 320px;
+margin: 0 auto;
+padding: 16px;
+border-radius: 8px;
+background-color: $gray-500;
+display: flex;
+flex-direction: column;
+gap: 8px;
+.filepond--credits{
+    display: none;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+}
+textarea{
+    font-family: 'Inter';
+    line-height: 140%;
+}
+button{
+justify-content: center;
+}
+}
