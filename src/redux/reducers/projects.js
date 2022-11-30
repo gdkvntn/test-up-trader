@@ -12,7 +12,7 @@ const initialState = {
   completedItems: [],
 };
 
-export default (state = initialState, action) => {
+const projects = (state = initialState, action) => {
   switch (action.type) {
     case ADD: {
       return {
@@ -273,3 +273,4 @@ export const onDragEnd = (result, columns, idPrj) => {
     return dispatch({ type: DRAGEND, result, columns, idPrj });
   };
 };
+export default projects;

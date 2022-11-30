@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import icon from "../assets/svg/add.svg";
 import Board from "../components/Board";
 import { addProject } from "../redux/reducers/projects";
-import Card from "../components/Card";
+
 import createIdGenerator from "../components/id-generator";
 
 const idGenerator = createIdGenerator();

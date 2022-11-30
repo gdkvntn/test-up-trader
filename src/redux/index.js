@@ -2,7 +2,6 @@ import { createStore, compose, applyMiddleware } from "redux";
 import rootReducer from "./reducers";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import { json } from "react-router-dom";
 
 const initialState = {};
 
